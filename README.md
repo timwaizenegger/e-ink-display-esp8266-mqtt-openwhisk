@@ -38,3 +38,25 @@ Only the interface to the display module is used and a whole frame (from mqtt) i
 
 The library also includes basic drawing and text rendering directly on the ESP. For smaller microcontrollers, it has a simple partial framebuffer support.
 
+
+# Whisk actions
+
+The two whisk actions here provide clock-image rendering, and sending images to the display.
+As a whisk secuence, together with a periodic trigger, they create the live clock display.
+
+Between the two actions, the rendered image is exchanged within the messages as base64. This limits the possible the image size dep. on what limit we have in Whisk. Images here are few KBs, 15KB max.
+
+## python send mqtt image
+
+* [whisk_python_sendmqttimage/](whisk_python_sendmqttimage/)
+
+This action is written in python and uses the paho mqtt library to send the pixel data to the esp. The action accepts a base64 encoded image (any format; png is used here) and brings it into the correct format for the e-ink display. Inside the action, the mqtt connection is configured.
+
+
+## js make clock image
+
+* [whisk_js_makeclock/](whisk_js_makeclock/)
+
+This action uses the js library "Jimp" to render a PNG image with the current time. You can copy the resulting image-string into a browser address bar to preview the resulting image.
+
+
