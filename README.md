@@ -44,7 +44,7 @@ The library also includes basic drawing and text rendering directly on the ESP. 
 The two whisk actions here provide clock-image rendering, and sending images to the display.
 As a whisk secuence, together with a periodic trigger, they create the live clock display.
 
-Between the two actions, the rendered image is exchanged within the messages as base64. This limits the possible the image size dep. on what limit we have in Whisk. Images here are few KBs, 15KB max.
+Between the two actions, the rendered image is exchanged within the messages as base64. This limits the possible image size depending on what limit we have in Whisk. Images here are few KBs, 15KB max.
 
 ## python send mqtt image
 
