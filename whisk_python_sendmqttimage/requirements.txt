@@ -1,0 +1,4 @@
+paho-mqtt
+pillow --global-option="build_ext" \
+       --global-option="--disable-jpeg" \
+       --global-option="--disable-freetype"
