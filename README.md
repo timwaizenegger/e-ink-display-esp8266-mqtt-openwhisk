@@ -29,7 +29,7 @@ It can be powered from USB and its 3.3V output supplies enough for the e-ink mod
 
 The arduino code connects to a wifi then to an mqtt broker. There, it waits for messages containing pixel data as a byte array. The entire mqtt message payload must be pixel data black/white with 1 bit per pixel. Each byte/char represents 8 pixels. 
 
-The Whisk actions will generate this byte array. So on the MQTT channel, we need support for a byte data-type and use pure Strings.
+The Whisk actions will generate this byte array. So on the MQTT channel, we need support for a byte data-type and can't use pure Strings.
 
 ![](doc/IMG_20171219_133108.jpg)
 ![](doc/IMG_20171219_133203.jpg)
