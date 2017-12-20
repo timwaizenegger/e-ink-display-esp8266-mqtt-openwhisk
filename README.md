@@ -8,7 +8,7 @@ This repo contains code to control an e-ink module, connected to a WeMos D1 ESP8
 
 ### Parts
 
-You need only 2 to build a display like this yourself:
+You need only 2 parts to build a display like this yourself:
 
 * WeMos D1 microcontroller or eqiuv. ESP8266 chip [https://www.ebay.com/itm/D1-Mini-NodeMcu-4M-bytes-Lua-WIFI-Development-Board-ESP8266-by-WeMos](https://www.ebay.com/itm/D1-Mini-NodeMcu-4M-bytes-Lua-WIFI-Development-Board-ESP8266-by-WeMos)
 The WeMos D1 has USB built in which makes it very easy to program/power.
