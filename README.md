@@ -1,18 +1,29 @@
 # e-ink-display-esp8266-mqtt-openwhisk
-This repo contains code to control an e-ink module, connected to a Wimos D1 ESP8266 chip, from cloud functions on openWhisk using MQTT
+This repo contains code to control an e-ink module, connected to a WeMos D1 ESP8266 chip, from cloud functions on openWhisk using MQTT
 
 
 ## Overview
 
   e-ink display module --> ESP8266 --> MQTT --> Whisk actions
 
+### Parts
+
+You need only 2 to build a display like this yourself:
+
+* WeMos D1 microcontroller or eqiuv. ESP8266 chip [https://www.ebay.com/itm/D1-Mini-NodeMcu-4M-bytes-Lua-WIFI-Development-Board-ESP8266-by-WeMos](https://www.ebay.com/itm/D1-Mini-NodeMcu-4M-bytes-Lua-WIFI-Development-Board-ESP8266-by-WeMos)
+The WeMos D1 has USB built in which makes it very easy to program/power.
+
+* E-Ink display. I used a Waveshare 4.2in display with SPI connection. [https://www.ebay.com/itm/4-2inch-E-Ink-Display-400x300-E-paper-Module-SPI-for-Raspberry-Pi-Arduino-STM32](https://www.ebay.com/itm/4-2inch-E-Ink-Display-400x300-E-paper-Module-SPI-for-Raspberry-Pi-Arduino-STM32)
+Different brands and different conections may not be compatible with the Software in this repo.
+
+* The power supply/regulator is optional. You can power it from USB.
 
 
 ## Arduino code for ESP8266 wifi microcontroller
 
 * [arduino-esp8266-eink-display/](arduino-esp8266-eink-display/)
 
-The arduino code runs on any generic ESP8266 module; here I use a Wimos D1. It has an included 5V->3.3V regulator and USB<>Serial converter for programming. 
+The arduino code runs on any generic ESP8266 module; here I use a WeMos D1. It has an included 5V->3.3V regulator and USB<>Serial converter for programming. 
 
 It can be powered from USB and its 3.3V output supplies enough for the e-ink module. The photos also show a separate 3.3V regulator so that ESP and display can be powered externally by 4-20V.
 
@@ -27,7 +38,7 @@ The Whisk actions will generate this byte array. So on the MQTT channel, we need
 ### Compiling Arduino code
 
 * You need the ESP8266 "Board" plugin installed in your Arduino IDE
-* Select the Wimos D1 board type and USB port
+* Select the WeMos D1 board type and USB port
 * Some libraries need to be installed acc. to include statements. You can use the Arduino library manager
 
 
