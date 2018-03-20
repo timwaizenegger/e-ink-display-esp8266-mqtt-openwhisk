@@ -5,6 +5,11 @@ This repo contains code to control an e-ink module, connected to a WeMos D1 ESP8
 ## Overview
 
   e-ink display module --> ESP8266 --> MQTT --> Whisk actions
+  
+
+
+![](doc/3.JPG)
+![](doc/4.JPG)
 
 ### Parts
 
