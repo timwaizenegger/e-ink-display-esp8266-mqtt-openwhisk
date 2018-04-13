@@ -60,8 +60,8 @@ The library also includes basic drawing and text rendering directly on the ESP. 
 
 # 3D printed case
 
-![](doc/3dp-base.jpg)
-![](doc/3dp-display.jpg)
+![](doc/3dp-base.png)
+![](doc/3dp-display.png)
 
 
 You can find `STL` files for 3D printing the base/display case in `3d-print/`.
