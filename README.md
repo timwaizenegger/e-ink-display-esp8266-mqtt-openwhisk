@@ -24,6 +24,7 @@ Different brands and different conections may not be compatible with the Softwar
 * The power supply/regulator is optional. You can power it from USB.
 
 
+
 ## Arduino code for ESP8266 wifi microcontroller
 
 * [arduino-esp8266-eink-display/](arduino-esp8266-eink-display/)
@@ -53,6 +54,25 @@ The code uses some parts of the example library from Waveshare [https://www.wave
 Only the interface to the display module is used and a whole frame (from mqtt) is always drawn at once. For these displays, the ESP8266 has enough memory to hold multiple full monochrome frames.
 
 The library also includes basic drawing and text rendering directly on the ESP. For smaller microcontrollers, it has a simple partial framebuffer support.
+
+
+
+
+# 3D printed case
+
+![](doc/3dp-base.jpg)
+![](doc/3dp-display.jpg)
+
+
+You can find `STL` files for 3D printing the base/display case in `3d-print/`.
+
+The designs can also be edited online on tinkercad.com:
+
+* https://www.tinkercad.com/things/0IOFBVQCBK1-eink-clock-base/editv2
+* https://www.tinkercad.com/things/iZ5w3NCEkOe-eink-clock1/editv2
+
+
+
 
 
 # Whisk actions
