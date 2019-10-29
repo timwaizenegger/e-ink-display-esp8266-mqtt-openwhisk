@@ -1,0 +1,9 @@
+{
+  "name": "make_bigtext_image",
+  "main": "action.js",
+  "dependencies": {
+    "jimp": "*",
+    "left-pad": "1.1.3",
+    "moment-timezone": "^0.5.14"
+  }
+}

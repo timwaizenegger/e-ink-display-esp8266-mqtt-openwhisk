@@ -1,4 +1,8 @@
 /*
+ * 
+ * Tim Waizenegger (c) 2018,2019
+ * Used as an open whisk action on IBM cloud
+
  * npm install
  * zip -r p.zip .
  * bx wsk action create make_clockimage --kind nodejs:8 p.zip 

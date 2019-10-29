@@ -73,6 +73,30 @@ The designs can also be edited online on tinkercad.com:
 
 
 
+# IBM Cloud MQTT Broker
+
+### Prepare the service
+
+1) Go to the Catalog and provision a `Internet of Things Platform` instance with the "Free" plan.
+1) Launch the dashboard, go into Settings
+1) Give it a nice Name if you want to 
+1) Go into "Connection Security" and set the Security Level to "TLS Optional". This allows us connection without TLS
+
+
+### Add the device
+1) Go to add a device, create/select a device type. Doesn't matter what you call it
+1) Give the device a name/ID
+1) Skip the metadata
+1) Give it a password/security token
+
+
+- How to connect to this broker with the Arduino libraries:
+  - https://developer.ibm.com/recipes/tutorials/ibm-iot-and-arduino/
+  - Add the display/Arduino as a "device"
+  - Add whisk as a "Application" so that it can send messages to devices
+    - Go to "Apps" and create an APi key there
+    - https://www.ibm.com/support/knowledgecenter/SSQP8H/iot/platform/applications/mqtt.html
+
 
 
 # Whisk actions

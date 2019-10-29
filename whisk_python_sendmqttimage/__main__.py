@@ -4,7 +4,7 @@
 
 
 """
-Tim Waizenegger (c) 2017
+Tim Waizenegger (c) 2017, 2019
 
 Used as an open whisk action on IBM cloud
 
